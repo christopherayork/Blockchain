@@ -24,6 +24,40 @@
   color: white;
 }
 
+form {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  width: 200px;
+  height: 24px;
+  font-size: 1.1em;
+  border-radius: 5px;
+}
+
+button {
+  margin-left: 5px;
+  border-radius: 5px;
+  height: 30px;
+}
+
+tr:nth-child(even) td {
+  background-color: #3b414d;
+}
+td {
+  padding: 2px;
+}
+
+tr td:nth-child(1) {
+  border-radius: 5px 0 0 5px;
+}
+
+tr td:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
 .App-link {
   color: #61dafb;
 }

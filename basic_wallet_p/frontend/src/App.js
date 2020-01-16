@@ -58,15 +58,22 @@ function App() {
             <h3>Currency: {currency}</h3>
           </div>
           <div className='transactions'>
-            {transactions.map(t => {
-              return (
-                <div className='transaction'>
-                  <span>Sender: {t.sender}</span><br/>
-                  <span>Recipient: {t.recipient}</span><br/>
-                  <span>Amount: {t.amount}</span>
-                </div>
-              );
-            })}
+            <table>
+              <tr>
+                <th>Sender</th>
+                <th>Recipient</th>
+                <th>Amount</th>
+              </tr>
+              {transactions.map(t => {
+                return (
+                  <tr>
+                    <td>{t.sender}</td>
+                    <td>{t.recipient}</td>
+                    <td>{t.amount}</td>
+                  </tr>
+                );
+              })}
+            </table>
           </div>
         </main>
       </header>
